@@ -64,6 +64,9 @@ while (action < 3):
                 print("\nPerform another action or go back to the main menu!")
                 print("\n1: Get members overdue on payments\n2: Get members who have paid\n3: Get the total amount of club money\n4: Get members signed up for an upcoming event\n5: Get the total hours contributed by the club\n6: Get a list of all members\n7: Go back to the main menu!\nType in a number to get started! (¬_¬ )\n")
                 action = input()
+                while (not action.isdigit()):
+                    action = input("Please type a number ༼ つ ◕_◕ ༽つ:")
+                action = int(action)
             if action == 2:
                 array = get_paid()
                 print(array)
@@ -72,12 +75,18 @@ while (action < 3):
                 print("\nPerform another action or go back to the main menu!")
                 print("\n1: Get members overdue on payments\n2: Get members who have paid\n3: Get the total amount of club money\n4: Get members signed up for an upcoming event\n5: Get the total hours contributed by the club\n6: Get a list of all members\n7: Go back to the main menu!\nType in a number to get started! (¬_¬ )\n")
                 action = input()
+                while (not action.isdigit()):
+                    action = input("Please type a number ༼ つ ◕_◕ ༽つ:")
+                action = int(action)
             if action == 3:
                 print(total_revenue())
                 action = input("\nPress enter to continue")
                 print("\nPerform another action or go back to the main menu!")
                 print("\n1: Get members overdue on payments\n2: Get members who have paid\n3: Get the total amount of club money\n4: Get members signed up for an upcoming event\n5: Get the total hours contributed by the club\n6: Get a list of all members\n7: Go back to the main menu!\nType in a number to get started! (¬_¬ )\n")
                 action = input()
+                while (not action.isdigit()):
+                    action = input("Please type a number ༼ つ ◕_◕ ༽つ:")
+                action = int(action)
             if action == 4:
                 array = get_signed_up()
                 print(array)
@@ -86,18 +95,27 @@ while (action < 3):
                 print("\nPerform another action or go back to the main menu!")
                 print("\n1: Get members overdue on payments\n2: Get members who have paid\n3: Get the total amount of club money\n4: Get members signed up for an upcoming event\n5: Get the total hours contributed by the club\n6: Get a list of all members\n7: Go back to the main menu!\nType in a number to get started! (¬_¬ )\n")
                 action = input()
+                while (not action.isdigit()):
+                    action = input("Please type a number ༼ つ ◕_◕ ༽つ:")
+                action = int(action)
             if action == 5:
                 print(total_hours())
                 action = input("\nPress enter to continue")
                 print("\nPerform another action or go back to the main menu!")
                 print("\n1: Get members overdue on payments\n2: Get members who have paid\n3: Get the total amount of club money\n4: Get members signed up for an upcoming event\n5: Get the total hours contributed by the club\n6: Get a list of all members\n7: Go back to the main menu!\nType in a number to get started! (¬_¬ )\n")
                 action = input()
+                while (not action.isdigit()):
+                    action = input("Please type a number ༼ つ ◕_◕ ༽つ:")
+                action = int(action)
             if action == 6:
                 print(get_members())
                 action = input("\nPress enter to continue")
                 print("\nPerform another action or go back to the main menu!")
                 print("\n1: Get members overdue on payments\n2: Get members who have paid\n3: Get the total amount of club money\n4: Get members signed up for an upcoming event\n5: Get the total hours contributed by the club\n6: Get a list of all members\n7: Go back to the main menu!\nType in a number to get started! (¬_¬ )\n")
                 action = input()
+                while (not action.isdigit()):
+                    action = input("Please type a number ༼ つ ◕_◕ ༽つ:")
+                action = int(action)
         action = 0
         continue
     elif action >= 3:
