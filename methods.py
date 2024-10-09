@@ -14,7 +14,7 @@ def get_info(name):
     data = csv.DictReader(open("data.csv"))
     for line in data:
         if get_name(line["member_id"]) == name:
-            return name, line["age"], line["gender"], line["email_address"], line["phone_number"], line["home_address"]
+            return name, line["age"] + " years old", line["gender"], line["email_address"], line["phone_number"], line["home_address"]
     return "Info not found for " + name
 
 def get_membership_duration(name):
@@ -79,4 +79,16 @@ def total_hours():
         sum += float(line["hours_committed"])
     return sum
 
+def get_members():
+    array = []
+    data = csv.DictReader(open("data.csv"))
+    for line in data:
+        array.append(get_name(line["member_id"]))
+    return array
+
+def get_something(name, element):
+    data = csv.DictReader(open("data.csv"))
+    for line in data:
+        if get_name(line["member_id"]) == name:
+            return line[element]
 
