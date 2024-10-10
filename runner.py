@@ -118,7 +118,9 @@ while (action < 3):
                 action = int(action)
         action = 0
         continue
-    elif action >= 3:
-        print("Thank you for using the Club Manager Portal™! Come again soon!")
-        quit()
+if action == 69:
+    print("o((>ω< ))o")
+if action >= 3:
+    print("Thank you for using the Club Manager Portal™! Come again soon!")
+    quit()
             
